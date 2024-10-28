@@ -1,0 +1,479 @@
+*{
+    font-family: 'Montserrat',sans-serif,arial;
+    box-sizing: border-box;
+}
+
+body{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+}
+
+header nav .logo{
+    z-index:2;
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap : 20px;
+}
+
+header nav .logo svg{
+    transition: 0.3s;
+}
+
+header nav .logo svg:hover{
+    scale : 1.1;
+    
+}
+
+header nav .logo h3{
+    transition: 0.3s;
+}
+
+header nav .logo h3:hover{
+    scale : 1.1;
+    
+}
+
+header nav div svg{
+    width : 40px;
+    height : 40px; 
+}
+
+
+header nav{
+    position: fixed;
+    width : 100%;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding : 10px 50px;
+    background-color:#6EACDA;
+    
+}
+
+header nav .burger-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height : 24px;
+}
+
+header nav .burger-menu .line{
+    height:2px;
+    width  : 30px;
+    background-color: black;;
+}
+
+header nav .menu{
+    width:100%;
+    display: none;
+    
+    
+}
+
+header nav .menu ul{
+    list-style-type: none;
+}
+
+header nav .menu ul li a{
+    text-decoration: none;
+    color : black;
+    transition : 0.3s
+}
+
+header nav .menu ul li a:hover{
+    font-weight: bold;
+    font-size:large
+}
+
+
+
+
+header .jumbotron{   
+    background-size: cover;
+    top : 80px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    z-index:-1;
+    position:relative; 
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom  ,#6EACDA, #F5F7F8);
+    margin-bottom : 80px;
+
+    
+}
+
+header .jumbotron aside{
+    display :flex;
+    width :100%;
+    
+    height: 100%;
+    background-color:#F5F7F8;
+}
+
+header .jumbotron-layer{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    color:white;
+    background-image: url('../img/gunung.png');
+    padding:80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header .jumbotron-layer button {
+    width : 100px;
+    height : 40px;
+    border-radius : 10px;
+    border: none;
+    background-color:#6EACDA;
+    transition: 0.2s ;
+}
+
+header .jumbotron-layer button a{
+    color :white;
+    text-decoration: none;
+}
+
+header div .jumbotron-layer button:hover{
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.5);
+    scale: 1.1;
+}
+
+header .jumbotron h1{
+    font-size : 70px;
+    display : block;
+}
+
+header .jumbroton p{
+    font-size:40px;
+}
+
+header .jumbotron aside {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+
+header .jumbotron aside .slides .slider img{
+    width : 300px;
+
+}
+
+header .jumbotron aside .slides .slider{
+    border : 1px solid;
+    border-color: white;
+}
+
+header .jumbotron aside .slides{
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .jumbotron aside .slides button{
+    width : 100px;
+    height : 40px;
+    border-radius: 10px;
+    background-color: #6EACDA;
+    border: none;
+}
+
+header .jumbotron aside .slides button:hover{
+    scale: 1.1;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+
+
+}
+
+header .jumbotron aside .slides button a{
+    text-decoration: none;
+    color : white
+}
+
+
+
+/* main */
+
+main section {
+    padding : 50px 0px;
+    /* color : white */
+}
+
+main .section-1{
+    background-image: linear-gradient(to bottom  ,#F5F7F8,#6EACDA )
+
+    
+}
+
+main .section-2 {
+    background-image: linear-gradient(to bottom  ,#6EACDA, #F5F7F8)
+    
+}
+
+
+
+main section article{
+    padding : 20px;
+    text-align: justify;
+}
+
+main section article h1{
+    font-size : 40px;
+}
+
+main section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .section-2 article{
+    padding : 20px;
+    text-align: center;
+}
+
+main section article svg{
+    width : 40px;
+    height : 40px;
+}
+
+main .section-2 div{
+    display: grid;
+    grid-column: 1;
+    margin : 20px;
+    align-items: center;
+
+
+}
+
+main .section-2 div .highlight-item{
+    background-color: #F5F7F8;
+    gap : 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:justify;
+
+
+}
+
+
+
+
+
+main .section-2 div div p{
+    padding : 0px 30px
+}
+
+
+
+main section div img{
+    padding : 20px;
+    height: 300px;
+
+}
+
+main #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding :  20px;
+    
+}
+
+main #contact form{
+    background-color: #F5F7F8;
+    width: 80%;
+    padding: 50px;
+    font-weight: bold;
+}
+
+main #contact form div {
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+    padding: 20px;
+}
+
+main #contact form div input{
+    width:100%;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+}
+
+main #contact form div textarea{
+    width : 100%;
+    border: none;
+    border-radius: 10px;
+    height: 100px;
+}
+
+main #contact form div button{
+    width : 100%;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    background-color:#6EACDA;
+    color:#F5F7F8;
+    transition : 0.3s;
+}
+
+main #contact form div button:hover{
+    scale : 1.1;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+footer .item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+}
+
+/* Media Query: Desktop View */
+@media (min-width: 768px) {
+    
+    header nav .burger-menu {
+        display: none; /* Sembunyikan burger menu di layar besar */
+    }
+
+    header nav .menu {
+        position:none;
+        width : auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        display : inline-block;
+        justify-content: center;
+    }
+
+    
+
+    header nav .menu ul {
+        display: flex;
+        list-style-type: none;
+        gap : 30px;
+        flex-direction: row;
+        
+        
+    }
+
+    
+    header nav .tentang-saya {
+        display: block;
+    }
+
+    header .jumbotron aside{
+        display : flex;
+        background-color:#6EACDA;
+        width : 40%;
+        
+    }
+
+    header .jumbotron{
+        padding : 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .jumbotron aside .slides button{
+        width : 100px;
+        height : 40px;
+        border-radius: 10px;
+        background-color:#F5F7F8;
+        border: none;
+    }
+    
+    header .jumbotron aside .slides button a{
+        text-decoration: none;
+        color :#6EACDA;
+    }
+
+    /* main */
+
+    main .section-1{
+        display : flex;
+        flex-direction: row;
+        gap : 20px;
+    }
+
+    
+    main .section-1 {
+        padding :50px;
+    }
+
+    main .section-2 div{
+        display: flex;
+        flex-direction: row;
+        gap : 50px;
+        align-items: center;
+    
+    
+
+    }
+
+    main .section-2 div .highlight-item img{
+        width : 300px;
+        height : 300px;
+        object-fit: cover;
+    }
+
+    main .section-2 div .highlight-item{
+        width : 400px
+
+    }
+
+    main .section-2 div .highlight-item p{
+        padding : 0px 50px;
+    }
+
+    main #contact form{
+        width : 50%;
+    }
+
+    main #contact{
+        padding : 100px;
+    }
+
+
+
+    /* footer */
+
+
+    
+    
+
+}
